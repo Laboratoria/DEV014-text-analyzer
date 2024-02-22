@@ -1,0 +1,79 @@
+:root {
+  --pig: #de6896;
+  --yellow: #f0cc56;
+  --purple-Soft: #e5dbfe;
+  --purple: #4f3d9f;
+  --black: #060012;
+  --white: #fefefe;
+}
+* {
+  font-family: "Lato";
+}
+header {
+  background-color: #e5dbfe;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: 2;
+}
+footer {
+  font-weight: 600;
+}
+
+textarea[name="user-input"] {
+  background-color: var(--white);
+}
+#reset-button {
+  background-color: #4f3d9f;
+  color: var(--white);
+}
+.containerCount {
+  background-color: var(--white);
+}
+.countWords {
+  background-color: var(--yellow);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.countCharacters {
+  background-color: var(--pig);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.countCharacterswtspaces {
+  background-color: var(--purple);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.countNumber {
+  background-color: var(--yellow);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.countSum {
+  background-color: var(--pig);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.wordLength {
+  background-color: var(--purple);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
