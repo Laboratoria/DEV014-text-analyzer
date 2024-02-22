@@ -7,73 +7,76 @@
   --white: #fefefe;
 }
 * {
-  font-family: "Lato";
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 header {
   background-color: #e5dbfe;
   border-radius: 2rem;
   display: grid;
-  grid-template-columns: 2;
-}
-footer {
-  font-weight: 600;
-}
-
-textarea[name="user-input"] {
-  background-color: var(--white);
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  place-items: center;
+  height: 230px;
 }
 #reset-button {
-  background-color: #4f3d9f;
-  color: var(--white);
+    background-color: #4f3d9f;
+    color: var(--white);
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    border-style: none;
+    grid-column: 2;
+    justify-self: center;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+footer {
+  display: grid;
+  grid-template-rows: 500px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  place-items: end;
 }
-.containerCount {
+textarea[name="user-input"] {
   background-color: var(--white);
-}
-.countWords {
-  background-color: var(--yellow);
   border-radius: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  height: 100px;
+  width: 400px;
+ border-style: dashed;
 }
-.countCharacters {
-  background-color: var(--pig);
-  border-radius: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+
+ul {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  gap: 200px;
 }
-.countCharacterswtspaces {
-  background-color: var(--purple);
+.count1 {
+  display: block;
+  background: var(--yellow);
   border-radius: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  color: var(--white);
+  margin: 10%;
+  padding: 10;
+  height: 200px;
+  width: 200px;
 }
-.countNumber {
-  background-color: var(--yellow);
+.count2 {
+  background: var(--pig);
   border-radius: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  color: var(--white);
+  margin: 10%;
+  padding: 10;
+  height: 200px;
+  width: 200px;
 }
-.countSum {
-  background-color: var(--pig);
+.count3 {
+  background: var(--purple);
   border-radius: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-.wordLength {
-  background-color: var(--purple);
-  border-radius: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  color: var(--white);
+  margin: 10%;
+  padding: 10;
+  height: 200px;
+  width: 200px;
 }
