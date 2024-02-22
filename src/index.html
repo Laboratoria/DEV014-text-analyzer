@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Analizador de texto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Analizador de texto</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header>
-<h1>Analizador de texto</h1>
-  </header>
-  <main>
-
-  </main>
-  <footer></footer>
-  <script src="index.js" type="module"></script>
-</body>
+  <body>
+    <header>
+      <h1>Analizador de texto</h1>
+      <!--estos elementos no pueden tener atributos id, ni name, ni class.-->
+      <textarea name="user-input" cols="30" rows="10"></textarea>
+      <!-- Para que puedas practicar más, este elemento no puede tener atributos id, ni class. -->
+      <button id="reset-button">Limpiar</button>
+    </header>
+    <main>
+      <ul>
+        <!-- estos elementos no pueden tener atributos id ni name ni hijos. -->
+        <li>Palabras:</li>
+        <li>Caracteres:</li>
+        <li>Caracteres sin espacios:</li>
+        <li>Números:</li>
+        <li>Suma de números:</li>
+        <li>Longitud de palabras:</li>
+      </ul>
+    </main>
+    <footer>
+      <p>Denis Alvarez - Deniisolo</p>
+      <!-- estos elementos no pueden tener atributos id ni name ni hijos. -->
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
