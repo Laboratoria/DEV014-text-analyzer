@@ -12,4 +12,6 @@ input.addEventListener("input", function () {
   const firstChild = uls[0].children[0];
   //asignarle el texto al li
   firstChild.innerHTML = "Palabras:  " + wordcount;
+  const countCharacter = analyzer.getCharacterCount(input.value)
+  console.log(countCharacter)
 });
