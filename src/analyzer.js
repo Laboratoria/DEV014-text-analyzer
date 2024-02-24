@@ -3,6 +3,7 @@ const analyzer = {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
     const palabras = text.split(" ");
     //no tener en cuenta el " " 
+    // Test comment
     let count = 0;
     for (let i = 0; i < palabras.length; i++) {
     if (palabras[i] !== "") {
