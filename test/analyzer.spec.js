@@ -1,5 +1,5 @@
 // We import the object 'analyzer' which contains the functions.
-import analyzer from '../src/analyzer';
+import {analyzer} from '../src/analyzer';
 
 
 const TEST_TEXT_NO_NUMBERS = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
