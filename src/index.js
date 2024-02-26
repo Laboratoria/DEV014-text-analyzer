@@ -12,11 +12,16 @@ input.addEventListener("input", function () {
   const firstChild = uls[0].children[0];
   //asignarle el texto al li 1
   firstChild.innerHTML = "Palabras:  " + wordcount;
-  
   //2 función: Recuento de caracteres
   const countCharacter = analyzer.getCharacterCount(input.value);
   // acceder a 2 li
   const secondChild= uls[0].children[1];
   //asignarle el texto al li 2
   secondChild.innerHTML = "Caracteres:  " + countCharacter;
+  // 3 función: Recuento de caracteres excluyendo espacios y signos de puntuación:
+  const countCharacterwtout = analyzer.getCharacterCountExcludingSpaces(input.value);
+  // tengo que acceder a li 3
+  const thirdChild = uls[0].children[2];
+  //asignarle el texto al li 3
+  thirdChild.innerHTML = "Caracteres sin espacios:  " + countCharacterwtout;
 });
