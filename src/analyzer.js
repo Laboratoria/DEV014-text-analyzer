@@ -19,24 +19,30 @@ const analyzer = {
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
     //contar caracteres excluyendo Espacios y signos puntuación . , ; :  ¿? ! " " - () [] /
-    let countexcluding = text.replace(".", "");
-    countexcluding = countexcluding.replace(" ", "");
-    countexcluding = countexcluding.replace(",", "");
-    countexcluding = countexcluding.replace(";", "");
-    countexcluding = countexcluding.replace(":", "");
-    countexcluding = countexcluding.replace("¿", "");
-    countexcluding = countexcluding.replace("?", "");
-    countexcluding = countexcluding.replace("!", "");
-    countexcluding = countexcluding.replace('"', "");
-    countexcluding = countexcluding.replace("-", "");
-    countexcluding = countexcluding.replace("(", "");
-    countexcluding = countexcluding.replace(")", "");
-    countexcluding = countexcluding.replace("[", "");
-    countexcluding = countexcluding.replace("]", "");
-    countexcluding = countexcluding.replace("/", "");
-    if (countexcluding.includes(".")) {
+    const punctuation = [
+      ".",
+      ",",
+      ";",
+      ":",
+      "¿",
+      "?",
+      "!",
+      '"',
+      "(",
+      ")",
+      "[",
+      "]",
+      "/",
+      "-",
+    ];
+    let cleanText = "";
+    for (let i = 0; i < text.length; i++) {
+      if (!punctuation.includes(text[i]) && text[i] !== " ") {
+        cleanText += text[i];
+      }
     }
-    return countexcluding.length;
+    let characterCount = cleanText.length;
+    return characterCount;
   },
   getAverageWordLength: (text) => {
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
