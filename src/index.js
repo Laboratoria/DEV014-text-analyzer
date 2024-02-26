@@ -4,7 +4,7 @@ import analyzer from "./analyzer.js";
 const input = document.querySelector("textarea[name='user-input']");
 
 input.addEventListener("input", function () {
-  // 1 función:Contar el numero de palabras
+  // 1 Función:Contar el numero de palabras
   const wordcount = analyzer.getWordCount(input.value);
   // tengo que acceder al ul
   const uls = document.getElementsByTagName("ul");
@@ -12,16 +12,27 @@ input.addEventListener("input", function () {
   const firstChild = uls[0].children[0];
   //asignarle el texto al li 1
   firstChild.innerHTML = "Palabras:  " + wordcount;
-  //2 función: Recuento de caracteres
+
+  //2 Función: Recuento de caracteres
   const countCharacter = analyzer.getCharacterCount(input.value);
   // acceder a 2 li
-  const secondChild= uls[0].children[1];
+  const secondChild = uls[0].children[1];
   //asignarle el texto al li 2
   secondChild.innerHTML = "Caracteres:  " + countCharacter;
-  // 3 función: Recuento de caracteres excluyendo espacios y signos de puntuación:
-  const countCharacterwtout = analyzer.getCharacterCountExcludingSpaces(input.value);
+
+  // 3 Función: Recuento de caracteres excluyendo espacios y signos de puntuación:
+  const countCharacterwtout = analyzer.getCharacterCountExcludingSpaces(
+    input.value
+  );
   // tengo que acceder a li 3
   const thirdChild = uls[0].children[2];
   //asignarle el texto al li 3
   thirdChild.innerHTML = "Caracteres sin espacios:  " + countCharacterwtout;
+
+  //4 Función: Recuento de números:
+  const countNumbers = analyzer.getNumberCount(input.value);
+  // tengo que acceder a li 4
+  const fourthChild = uls[0].children[3];
+  //asignarle el texto al li 4
+  fourthChild.innerHTML = "Números:    " + countNumbers;
 });
