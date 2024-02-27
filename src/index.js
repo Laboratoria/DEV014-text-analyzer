@@ -43,5 +43,10 @@ input.addEventListener("input", function () {
   //asignarle el texto al li 5
   fifthChild.innerHTML = "Suma de números:   " + sumNumber;
 
-  
+    //6 función Longitud media de las palabras: 
+    const lengthWord = analyzer.getAverageWordLength(input.value);
+    // tengo que acceder a li 6
+    const sixthChild = uls[0].children[5]
+    //asignarle el texto al li 6
+    sixthChild.innerHTML = "Longitud de palabras:   " + lengthWord; 
 });
