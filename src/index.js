@@ -35,4 +35,13 @@ input.addEventListener("input", function () {
   const fourthChild = uls[0].children[3];
   //asignarle el texto al li 4
   fourthChild.innerHTML = "Números:    " + countNumbers;
+
+  //5 función Suma total de números:
+  const sumNumber = analyzer.getNumberSum(input.value);
+  // tengo que acceder a li 5
+  const fifthChild = uls[0].children[4];
+  //asignarle el texto al li 5
+  fifthChild.innerHTML = "Suma de números:   " + sumNumber;
+
+  
 });

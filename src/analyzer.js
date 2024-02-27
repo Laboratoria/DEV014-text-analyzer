@@ -41,7 +41,7 @@ const analyzer = {
         cleanText += text[i];
       }
     }
-    let characterCount = cleanText.length;
+    const characterCount = cleanText.length;
     return characterCount;
   },
   getAverageWordLength: (text) => {
@@ -59,6 +59,13 @@ const analyzer = {
   },
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    let sum = 0;
+    for (let i = 0; i < text.length; i++) {
+      if (!isNaN(text[i]) && text[i] !== " ") {
+        sum += parseInt(text[i]);
+      }
+    }
+    return sum;
   },
 };
 
