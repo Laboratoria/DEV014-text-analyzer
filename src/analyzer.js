@@ -50,14 +50,17 @@ export const analyzer = {
     //   suma += parseFloat(numerosArray[i]);
     // }
     // return suma;
+    let suma = 0;
     const numbers = text.split(' ').filter(word => {
       if (word.endsWith('.')) {
         word = word.slice(0, -1);
       }
       return !isNaN(word) && word.trim() !== '';
     })
-      .map(number => parseFloat(number))
-      .reduce((acc, number) => acc + number, 0);
-    return numbers;
+    for(let i = 0; i<numbers.length; i++)
+    {
+      suma += parseFloat(numbers[i]);
+    }
+    return suma;
   },
 };
