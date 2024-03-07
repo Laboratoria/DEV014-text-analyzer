@@ -37,7 +37,7 @@ const analyzer = {
     let cleanText = "";
     for (let i = 0; i < text.length; i++) {
       if (!punctuation.includes(text[i]) && text[i] !== " ") {
-        cleanText += text[i];
+        cleanText += text[i]; // acá no hay numeros
       }
     }
     const characterCount = cleanText.length;
@@ -65,17 +65,17 @@ const analyzer = {
     }
     if (text[text.length - 1] === ".") {
       // el ultimo caracter de mi texto.
-      text = text.substring(0, text.length - 1);
+      text = text.substring(0, text.length - 1); // donde inicina // - 1 donde termina 
     }
     const words = text.split(" ");
     let count = 0;
     for (let i = 0; i < words.length; i++) {
-      const numero = parseFloat(words[i]); // Utilizar parseFloat para manejar números decimales
+      const numero = parseFloat(words[i]); // Utilizar parseFloat para manejar números decimale/s (1a -> 1)
       while (words[i].endsWith("0")) {
         //mientras mi palabra termine en 0 esto va a ser true
-        words[i] = words[i].substring(0, words[i].length - 1); //substring retira lo solicitado
+        words[i] = words[i].substring(0, words[i].length - 1);  // voy a eliminar el 0 a la derecha //substring retira lo solicitado
       }
-      if (!isNaN(numero) && words[i] === numero.toString()) {
+      if (!isNaN(numero) && words[i] === numero.toString()) { // && si pasan las 2 cosas 
         // Verificar si la conversión fue exitosa y no es NaN
         count++;
       }
@@ -95,7 +95,7 @@ const analyzer = {
     const words = text.split(" ");
     let count = 0;
     for (let i = 0; i < words.length; i++) {
-      const numero = parseFloat(words[i]); // Utilizar parseFloat para manejar números decimales
+      const numero = parseFloat(words[i]); // Utilizar parseFloat para manejar números decimales(1a -> 1)
       while (words[i].endsWith("0")) {
         //mientras mi palabra termine en 0 esto va a ser true
         words[i] = words[i].substring(0, words[i].length - 1); //substring retira lo solicitado
