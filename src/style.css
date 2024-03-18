@@ -1,0 +1,72 @@
+body{
+    background: url('tele.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+textarea[name="user-input"]{
+    resize: none;
+    padding: 10px;
+    background-color: rgb(0, 0, 0,0.7);
+    color: aliceblue;
+    border-radius: 10px;
+}
+h1{
+    color: #f6ff00;
+    font-family: cursive;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    list-style: none;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.item{
+    flex-basis: 20%;
+    background-color: #000000;
+    color: rgb(247, 247, 247);
+    border-radius: 10px;
+    padding: 10px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#reset-button{
+    opacity: 0.5;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: aqua;
+    background: darkgray;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#reset-button:hover{
+    opacity: 1;
+    color: rgb(129, 0, 132);
+    scale: 1.15;
+    transition-duration: .15s;
+
+    /*efecto cursor*/
+    cursor: pointer;
+}
